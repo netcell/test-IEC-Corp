@@ -106,9 +106,9 @@ public class ShopUI : MonoBehaviour
 
 	public void CheatCoin()
 	{
-#if !UNITY_EDITOR && !DEVELOPMENT_BUILD
-        return ; //you can't cheat in production build
-#endif
+// #if !UNITY_EDITOR && !DEVELOPMENT_BUILD
+//         return ; //you can't cheat in production build
+// #endif
 
         PlayerData.instance.coins += k_CheatCoins;
 		PlayerData.instance.premium += k_CheatPremium;

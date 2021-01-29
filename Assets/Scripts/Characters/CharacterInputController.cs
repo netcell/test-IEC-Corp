@@ -401,7 +401,25 @@ public class CharacterInputController : MonoBehaviour
             inventory = null;
         }
     }
-
+	// public void CheatInventory(Consumable.ConsumableType type) {
+	// 	inventory = ConsumableDatabase.GetConsumbale(type);
+	// 	if (inventory.CanBeUsed(this)) {
+	// 		UseConsumable(inventory);
+	// 		inventory = null;
+	// 	}
+	// }
+	// public void CheatCoinMag() {
+	// 	CheatInventory(Consumable.ConsumableType.COIN_MAG);
+	// }
+	// public void CheatExtraLife() {
+	// 	CheatInventory(Consumable.ConsumableType.EXTRALIFE);
+	// }
+	// public void CheatInvincible() {
+	// 	CheatInventory(Consumable.ConsumableType.INVINCIBILITY);
+	// }
+	// public void CheatScoreMultiplayer() {
+	// 	CheatInventory(Consumable.ConsumableType.SCORE_MULTIPLAYER);
+	// }
     public void UseConsumable(Consumable c)
     {
 		characterCollider.audio.PlayOneShot(powerUpUseSound);
